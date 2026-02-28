@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arikta Trivedi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#" onclick="showSection('home'); return false;">Arikta Trivedi</a>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home');            return false;" data-section="home"            class="nav-link active">Home</a></li>
+        <li><a href="#" onclick="showSection('about');           return false;" data-section="about"           class="nav-link">About</a></li>
+        <li><a href="#" onclick="showSection('outreach');        return false;" data-section="outreach"        class="nav-link">Outreach</a></li>
+        <li><a href="#" onclick="showSection('research');        return false;" data-section="research"        class="nav-link">Research</a></li>
+        <li><a href="#" onclick="showSection('clinical');        return false;" data-section="clinical"        class="nav-link">Clinical</a></li>
+        <li><a href="#" onclick="showSection('acknowledgements');return false;" data-section="acknowledgements" class="nav-link">Acknowledgements</a></li>
+        <li><a href="#" onclick="showSection('contact');         return false;" data-section="contact"         class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════ HOME ══ -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <p class="hero-eyebrow">Evidence of Work Portfolio</p>
+        <h1 class="hero-name">Arikta <em>Trivedi</em></h1>
+        <p class="hero-sub">Pre-medicine &nbsp;·&nbsp; Public Health &nbsp;·&nbsp; University of Washington</p>
+
+        <div class="home-grid">
+          <button class="home-card" onclick="showSection('about')">
+            <span class="hc-cat">About Me</span>
+            <span class="hc-title">Who I am, what drives me, and where I'm headed.</span>
+            <span class="hc-arrow">→</span>
+          </button>
+          <button class="home-card" onclick="showSection('outreach')">
+            <span class="hc-cat">Community-Based Health Education Outreach</span>
+            <span class="hc-title">Neuroscience outreach with Grey Matters &amp; stem cell donor drives with NMDP.</span>
+            <span class="hc-arrow">→</span>
+          </button>
+          <button class="home-card" onclick="showSection('research')">
+            <span class="hc-cat">Health Research &amp; Data Analysis</span>
+            <span class="hc-title">AgRP neuron research &amp; a population health study on academic burden and exercise.</span>
+            <span class="hc-arrow">→</span>
+          </button>
+          <button class="home-card" onclick="showSection('clinical')">
+            <span class="hc-cat">Clinical &amp; Emergency Care Experience</span>
+            <span class="hc-title">Event EMT work at public events &amp; clinical cardiology research at Harborview.</span>
+            <span class="hc-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ ABOUT ══ -->
+    <section id="about" class="page">
+      <div class="page-header">
+        <p class="eyebrow">About Me</p>
+        <h1 class="page-title">Hi, I'm Arikta.</h1>
+      </div>
+      <div class="prose-wrap">
+        <p class="prose drop-cap">
+          I'm a pre-medicine student at the University of Washington Seattle, studying Public Health.
+          My path toward medicine has been shaped by experiences across three worlds I care deeply
+          about: community health education, research, and direct patient care. Each of those spaces
+          has taught me something different about what it actually means to be in healthcare.
+        </p>
+        <p class="prose">
+          I grew up drawn to science and people in equal measure, and medicine felt like the place
+          where those two things could genuinely meet. Over the past few years, I've facilitated
+          neuroscience lessons for K–12 students, worked in a basic science research lab studying
+          metabolic disease, co-led a stem cell donor registry on campus, worked as an event EMT,
+          and conducted clinical research at Harborview Medical Center. Each of these experiences
+          has pushed me, confused me, and ultimately clarified what kind of physician I want to be.
+        </p>
+        <p class="prose">
+          What ties all of it together is a belief that good medicine — and good healthcare — depends
+          on trust, clarity, and meeting people where they are. Whether I was explaining a sheep
+          brain dissection to a seventh grader, sitting outside a patient's room deciding whether
+          to knock, or managing a medical emergency on a swinging rope bridge over a river, what
+          mattered most was judgment, empathy, and presence.
+        </p>
+        <p class="prose">
+          This portfolio is a collection of the work that has gotten me here. Each piece reflects
+          something I genuinely experienced and something I'm still learning from.
+        </p>
+        <div class="tag-row" style="margin-top:1.75rem;">
+          <span class="tag">Neuroscience Outreach</span>
+          <span class="tag">Basic Science Research</span>
+          <span class="tag">Population Health</span>
+          <span class="tag">NMDP Co-President</span>
+          <span class="tag">Event EMT</span>
+          <span class="tag">Clinical Cardiology Research</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ OUTREACH ══ -->
+    <section id="outreach" class="page">
+      <div class="page-header">
+        <p class="eyebrow">Community-Based Health Education Outreach</p>
+        <h1 class="page-title">Outreach</h1>
+      </div>
+
+      <!-- sub-tabs -->
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="switchTab(this,'neuro-panel')">Making Neuroscience Relevant</button>
+        <button class="sub-tab"        onclick="switchTab(this,'nmdp-panel')">Stem Cell Donor Outreach</button>
+      </div>
+
+      <!-- panel 1 -->
+      <div id="neuro-panel" class="tab-panel active">
+        <div class="panel-intro">
+          <p class="panel-cat">Breaking neuroscience barriers &nbsp;·&nbsp; Grey Matters &nbsp;·&nbsp; K–12</p>
+          <h2 class="panel-title">Making Neuroscience Relevant Through Community Outreach</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            Through Grey Matters neuroscience outreach, I helped plan and facilitate interactive
+            lessons for K–12 students, including sheep brain dissections and hands-on demonstrations.
+            My role often involved working with small groups of students, answering questions as they
+            came up, and adjusting explanations on the spot based on what students already knew.
+            Many of the schools we visited served students with limited access to hands-on science
+            education, and some classrooms included many non-English-speaking students. That made it
+            especially important to present neuroscience in ways that felt approachable and connected
+            to students' everyday lives rather than overwhelming or abstract.
+          </p>
+          <p class="prose">
+            This work mattered to me from a public health perspective because early exposure to
+            science and health education shapes who feels included in these fields later on. I saw
+            firsthand how barriers like language, lack of resources, and limited exposure can make
+            science feel inaccessible. Bringing interactive neuroscience lessons into classrooms
+            helped counter some of those barriers by giving students direct, engaging experiences
+            with scientific material and college students they could relate to. It also reinforced
+            for me that health communication is not just about delivering information, but about
+            making people feel capable of understanding it.
+          </p>
+          <p class="prose">
+            Through this experience, I developed practical skills in science communication,
+            facilitation, and adaptability. I learned how to prioritize clarity over completeness,
+            read student engagement, and pivot when something wasn't landing. For example, I often
+            connected brain structures to sports, movement, or injury when working with students
+            who were athletes, which made the material more relevant to them. These skills now show
+            up in other parts of my life, including peer facilitation, research discussions, and
+            everyday conversations about science. Overall, this outreach confirmed my interest in
+            community-engaged public health education and the role it plays in expanding access
+            and inclusion.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact</p>
+            <div class="artifact-card">
+              <img src="images/img-000.jpg" alt="Outreach activity at Brain Fest held by the Pacific Science Institute" class="artifact-img" />
+              <p class="artifact-caption">This image shows an outreach activity at Brain Fest held by the Pacific Science Institute.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- panel 2 -->
+      <div id="nmdp-panel" class="tab-panel">
+        <div class="panel-intro">
+          <p class="panel-cat">Learning patient autonomy through NMDP &nbsp;·&nbsp; Promoting patient autonomy &nbsp;·&nbsp; Co-President</p>
+          <h2 class="panel-title">Mobilizing Community Action Through Stem Cell Donor Outreach</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            I first became involved with stem cell donor drives through the National Marrow Donor
+            Program because, as someone who hopes to work in healthcare as a physician, I was
+            looking for ways in undergrad to make a real impact. When I first heard patient stories
+            about individuals whose lives were saved by a stem cell transplant, the work felt
+            immediate and meaningful. Joining the registry is something ordinary people can do that
+            has life-changing consequences for someone else. That idea stayed with me. As I became
+            more involved, I took on leadership responsibilities and helped organize recruitment
+            events on campus. I coordinated logistics, managed volunteers, and spent a lot of my
+            time having one-on-one conversations with students about what stem cell donation
+            actually involves.
+          </p>
+          <p class="prose">
+            After hearing patient stories and becoming more involved, I first served as Social Media
+            Chair, where I focused on expanding our reach and increasing awareness about stem cell
+            donation. Later, as Co-President, I had more influence over how we structured our donor
+            drives and volunteer training. Early on, I was focused on numbers and growth, and I
+            remember thinking, why would anyone not sign up? During donor drives, there was a
+            strong emphasis on numbers, on getting as many people onto the registry as possible.
+            Over time, that mindset shifted for me. I saw how differently people responded to the
+            same information. Some students were immediately ready to register, while others
+            hesitated because they were afraid of needles or unsure what donation would require.
+            I realized that it is not a small commitment. If someone matches with a patient, they
+            may be that person's only match. We don't want people backing out because they feel
+            overwhelmed or misinformed. That realization changed how I crafted outreach strategies.
+            I stopped thinking about recruitment as persuasion and started thinking about it as
+            education. My approach became less about convincing and more about making sure people
+            understood the process well enough to make an informed decision.
+          </p>
+          <p class="prose">
+            From this experience, I learned that community-based health work depends on trust and
+            transparency. Public health initiatives only succeed when people feel respected and
+            fully informed. Through NMDP, I learned that education is not just a step in the
+            process. It is the foundation of ethical participation. Seeing the impact of donation
+            through patient stories and meeting individuals whose cancer was cured through a
+            transplant made the responsibility feel real. This experience strengthened my commitment
+            to patient autonomy and reinforced that informed consent begins long before someone
+            even enters a clinical setting.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact</p>
+            <div class="artifact-card">
+              <img src="images/img-003.jpg" alt="UW Athletics collaboration donor drive event" class="artifact-img" />
+              <p class="artifact-caption">
+                This is one of our biggest events of the year in collaboration with UW Athletics.
+                It's an event I spent a lot of time planning and volunteering at, and our hard work
+                paid off because we got more than <strong>100 registrations in one day!</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ RESEARCH ══ -->
+    <section id="research" class="page">
+      <div class="page-header">
+        <p class="eyebrow">Health Research &amp; Data Analysis</p>
+        <h1 class="page-title">Research</h1>
+      </div>
+
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="switchTab(this,'agrp-panel')">AgRP Neuron Research</button>
+        <button class="sub-tab"        onclick="switchTab(this,'sph-panel')">Population Health Study</button>
+      </div>
+
+      <!-- panel 1 -->
+      <div id="agrp-panel" class="tab-panel active">
+        <div class="panel-intro">
+          <p class="panel-cat">Lab Research &nbsp;·&nbsp; Mouse Models &nbsp;·&nbsp; Metabolic Disease</p>
+          <h2 class="panel-title">Exploring Metabolic Disease Through AgRP Neuron Research</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            I worked on a laboratory research project investigating the role of agouti-related
+            peptide (AgRP) neurons in metabolic regulation using mouse models. My responsibilities
+            included collecting metabolic measurements, preparing brain tissue through freezing and
+            sectioning, performing immunohistochemistry, and supporting experiments related to
+            feeding behavior and glucose regulation. At first, much of the work felt procedural,
+            like I was just following protocols without fully understanding how each step fit into
+            the larger research question.
+          </p>
+          <p class="prose">
+            Over time, the purpose of the work became clearer, especially when I began to see
+            stained brain sections under the microscope and connect those images to blood glucose
+            data and graphs. This research is important because metabolic diseases like diabetes
+            are often framed as disorders of peripheral organs, yet growing evidence shows that the
+            brain plays a significant role in regulating energy balance and glucose homeostasis.
+            Being part of a project that examined neural mechanisms of metabolic disease helped me
+            see how basic science research contributes to broader public health questions about
+            prevention, treatment, and access to care.
+          </p>
+          <p class="prose">
+            Through this experience, I gained technical lab skills and a deeper understanding of
+            how evidence is generated. I learned that research is iterative and often an
+            uncomfortably long and non-gratifying experience. Experiments don't always work, data
+            take time to make sense, and progress depends on patience and collaboration. I also
+            became more comfortable asking questions and admitting uncertainty, especially in a
+            large lab setting. This project strengthened my critical thinking and helped solidify
+            my interest in research that bridges neuroscience, physiology, and public health,
+            particularly in the context of chronic disease.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact &nbsp;·&nbsp; Published Manuscript</p>
+            <div class="artifact-card">
+              <img src="images/img-001.jpg" alt="Published paper: AgRP neuron hyperactivity drives hyperglycemia in a mouse model of type 2 diabetes" class="artifact-img" />
+              <p class="artifact-caption">
+                This manuscript represents my contribution to experimental data collection and
+                analysis for this research project.
+              </p>
+              <div class="pub-meta-row">
+                <strong>AgRP neuron hyperactivity drives hyperglycemia in a mouse model of type 2 diabetes</strong>
+                <span>PMID: 40371641 &nbsp;·&nbsp; PMCID: PMC12077889 &nbsp;·&nbsp; DOI: 10.1172/JCI589842</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- panel 2 -->
+      <div id="sph-panel" class="tab-panel">
+        <div class="panel-intro">
+          <p class="panel-cat">Navigating collaborative research &nbsp;·&nbsp; Mixed methods &nbsp;·&nbsp; SPH 480</p>
+          <h2 class="panel-title">Designing a Population Health Study on Academic Burden and Exercise</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            As part of a collaborative research project in SPH 480, I helped design and conduct a
+            cross-sectional study examining whether academic burden was associated with time spent
+            exercising among full-time undergraduate students at the University of Washington
+            Seattle campus during Spring 2025. The research question was personally relevant to me,
+            as I was navigating a demanding academic schedule while trying to maintain my own
+            physical and mental health. Our group worked through all stages of the research process,
+            including developing the research question, designing a survey, collecting data, and
+            conducting analysis.
+          </p>
+          <p class="prose">
+            This project addressed a broader public health issue about how institutional structures,
+            such as academic expectations, shape health behaviors. Rather than viewing exercise as
+            an individual choice alone, the study highlighted how time pressure and academic demands
+            can limit students' ability to prioritize physical activity. Understanding these dynamics
+            is important for informing university-level policies and prevention efforts that support
+            student well-being rather than placing responsibility solely on individuals.
+          </p>
+          <p class="prose">
+            Through this experience, I developed skills in collaborative research, variable
+            operationalization, data cleaning, and both quantitative and qualitative analysis.
+            Working closely with my group taught me how much research depends on communication and
+            shared decision-making. I became more confident asking questions, contributing ideas,
+            and engaging with feedback when aspects of the study were unclear. Interpreting our
+            findings and connecting them to real-world implications strengthened my understanding
+            of how population health research informs institutional and medical decision-making.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact &nbsp;·&nbsp; Final Research Report</p>
+            <div class="artifact-card">
+              <img src="images/img-002.jpg" alt="Final research report: Determining if Academic Burden Is Associated with Time Spent Exercising" class="artifact-img" />
+              <p class="artifact-caption">
+                <strong>Determining if Academic Burden Is Associated with Time Spent Exercising Among University of Washington Full-time Undergraduate Students</strong><br/>
+                SPH 480 &nbsp;·&nbsp; Spring 2025 &nbsp;·&nbsp; University of Washington Seattle
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ CLINICAL ══ -->
+    <section id="clinical" class="page">
+      <div class="page-header">
+        <p class="eyebrow">Clinical &amp; Emergency Care Experience</p>
+        <h1 class="page-title">Clinical</h1>
+      </div>
+
+      <div class="sub-tabs">
+        <button class="sub-tab active" onclick="switchTab(this,'emt-panel')">Emergency Care</button>
+        <button class="sub-tab"        onclick="switchTab(this,'harborview-panel')">Harborview</button>
+      </div>
+
+      <!-- panel 1 -->
+      <div id="emt-panel" class="tab-panel active">
+        <div class="panel-intro">
+          <p class="panel-cat">Event EMT &nbsp;·&nbsp; Clinical Judgment &nbsp;·&nbsp; Scope of Practice</p>
+          <h2 class="panel-title">Providing Emergency Care in Unpredictable Community Settings</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            I work as an event Emergency Medical Technician, providing on-site care at large public
+            events. I pursued this role because I wanted more direct patient interaction and to
+            experience what real-time medical decision-making actually feels like outside of a
+            classroom to support my future career path as a physician. Event medicine is very
+            different from hospital care. It often means working in crowded, loud, and
+            unpredictable environments with limited equipment and support. My responsibilities
+            include assessing patients, taking vital signs, stabilizing conditions when possible,
+            and deciding whether a situation can be managed on site or needs to be escalated by
+            calling 911.
+          </p>
+          <p class="prose">
+            One moment that stayed with me happened at a music festival when a patient passed out
+            on a suspended wooden rope bridge over a river. The bridge was swinging, people were
+            crossing from both sides, and loud music from a nearby stage made it difficult to
+            communicate. Before even thinking about the patient assessment, I had to focus on
+            securing the scene and making sure no one else was at risk. Taking a manual blood
+            pressure while standing on a moving bridge forced me to narrow my attention and
+            concentrate only on what was essential. That experience made me realize that clinical
+            care is not just about knowing what to do. It is about judgment, prioritization, and
+            staying calm enough to think clearly when everything around you feels chaotic.
+          </p>
+          <p class="prose">
+            The biggest lesson I have learned from this role is the importance of understanding
+            the scope of practice. At events, we do not have access to the full range of hospital
+            resources, and sometimes the most responsible decision is recognizing that a situation
+            is beyond what we can safely manage and calling 911. Early on, I felt pressure to
+            handle as much as possible on my own. Over time, I have learned that patient safety
+            comes first, even if that means stepping back and involving a higher level of care.
+            This experience has strengthened my confidence in decision-making while also teaching
+            me humility. Good clinical care is not about proving you can handle everything. It is
+            about knowing when to escalate and trusting the larger emergency response system.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact</p>
+            <div class="artifact-card">
+              <img src="images/img-004.jpg" alt="First aid setup at an outdoor music festival" class="artifact-img" />
+              <p class="artifact-caption">
+                This is a picture of our setup at an outdoor music festival. It shows how
+                non-traditional the environment is and how often we don't have all the supplies
+                of a fully equipped ambulance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- panel 2 -->
+      <div id="harborview-panel" class="tab-panel">
+        <div class="panel-intro">
+          <p class="panel-cat">Navigating clinical care in inpatient and outpatient settings &nbsp;·&nbsp; UW Harborview</p>
+          <h2 class="panel-title">Navigating Clinical Research and Patient Vulnerability at Harborview</h2>
+        </div>
+        <div class="prose-wrap">
+          <p class="prose drop-cap">
+            I work on clinical cardiology research at UW Harborview Medical Center, focusing on
+            studies related to sleep-disordered breathing and cardiovascular health. My
+            responsibilities include reviewing patient charts to determine eligibility, approaching
+            patients to explain the study and obtain consent, and teaching them how to use
+            home-based monitoring devices such as a sleep ring or breathing monitor. Much of this
+            work happens on inpatient units, where patients are recovering from serious injuries or
+            managing complex medical conditions. Being part of research in that setting has shown
+            me how closely scientific protocols and human experience intersect.
+          </p>
+          <p class="prose">
+            Through this work I've had to interact with a lot of patients, but one experience that
+            I vividly remember was a day when I reviewed a patient's chart before entering the room
+            and saw a long list of diagnoses and recent procedures. Technically, they met every
+            eligibility criterion for the study. I decided to go see the patient anyways, but when
+            I got to the door I felt a lot of hesitation. I could hear family members inside, and
+            the patient had clearly been through a lot. When I introduced myself and explained the
+            study, I could sense that it was not the right moment. The conversation was brief. They
+            declined, and I left the room thinking about how easy it would be if eligibility was
+            the only factor at play. That experience stayed with me. It made me more aware that
+            patients are not just potential participants but individuals navigating stress, pain,
+            and uncertainty.
+          </p>
+          <p class="prose">
+            The main takeaway from this experience for me was that good clinical research requires
+            more than following a protocol. It requires situational awareness, empathy, and the
+            judgment to recognize when to move forward and when to step back. At the same time,
+            it also requires the willingness to enter spaces that feel uncomfortable. Early on,
+            walking into hospital rooms alone felt intimidating, and there were moments when I
+            questioned whether I belonged there. Learning to introduce myself confidently, explain
+            the study clearly, and accept whatever decision followed helped me grow. Moving
+            forward, I know this balance will matter in my future work in healthcare. Whether
+            conducting research or caring for patients, I will need to recognize the context
+            people are in, respect their autonomy, and still be willing to step into difficult
+            conversations with professionalism and care.
+          </p>
+          <div class="artifact-section">
+            <p class="artifact-label">Artifact &nbsp;·&nbsp; Published Abstract</p>
+            <div class="artifact-card">
+              <img src="images/img-005.jpg" alt="Published abstract on noninvasive continuous blood pressure monitoring" class="artifact-img" />
+              <p class="artifact-caption">
+                This is an abstract published from some of the work I completed in the research
+                lab, particularly the work I did with blood pressure measurements in patients
+                with heart failure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ ACKNOWLEDGEMENTS ══ -->
+    <section id="acknowledgements" class="page">
+      <div class="page-header">
+        <p class="eyebrow">Thank you</p>
+        <h1 class="page-title">Acknowledgements</h1>
+      </div>
+      <div class="prose-wrap">
+        <p class="prose">
+          None of this work happened alone. I'm grateful to every mentor, colleague, patient,
+          and student who made these experiences possible and meaningful.
+        </p>
+        <div class="ack-grid">
+          <div class="ack-card">
+            <p class="ack-org">Grey Matters</p>
+            <p class="ack-note">Thank you to the Grey Matters team and every K–12 student who showed up with curiosity. Those classrooms reminded me why science communication matters.</p>
+          </div>
+          <div class="ack-card">
+            <p class="ack-org">Research Lab</p>
+            <p class="ack-note">To my PI and labmates — thank you for your patience as I learned, for answering every question, and for showing me what rigorous science looks like up close.</p>
+          </div>
+          <div class="ack-card">
+            <p class="ack-org">SPH 480 Team</p>
+            <p class="ack-note">To my research group — this project was better because of all of us. Thank you for the late nights, the shared confusion, and the shared excitement when things clicked.</p>
+          </div>
+          <div class="ack-card">
+            <p class="ack-org">NMDP / Stem Cell Club</p>
+            <p class="ack-note">To every volunteer, donor, and patient whose story shaped how I think about informed consent and community health. This work changed my perspective permanently.</p>
+          </div>
+          <div class="ack-card">
+            <p class="ack-org">EMT Team</p>
+            <p class="ack-note">To my fellow EMTs — thank you for teaching me how to stay calm, trust my training, and know when to ask for help. Patient safety first, always.</p>
+          </div>
+          <div class="ack-card">
+            <p class="ack-org">Harborview Research Team</p>
+            <p class="ack-note">To the team at Harborview and every patient who took the time to speak with me — thank you for showing me what it looks like when science and humanity meet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ CONTACT ══ -->
+    <section id="contact" class="page">
+      <div class="page-header">
+        <p class="eyebrow">Get in touch</p>
+        <h1 class="page-title">Contact</h1>
+      </div>
+      <div class="prose-wrap">
+        <p class="prose">
+          I'm always happy to connect — whether it's about public health, medicine, research,
+          or anything in between.
+        </p>
+        <div class="contact-card">
+          <div class="contact-row">
+            <span class="contact-label">University</span>
+            <span class="contact-val">University of Washington, Seattle</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Program</span>
+            <span class="contact-val">Public Health &nbsp;·&nbsp; Pre-medicine</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <span class="contact-val">atrivedi@uw.edu</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    ✦ &nbsp; Arikta Trivedi &nbsp;·&nbsp; Evidence of Work Portfolio &nbsp; ✦
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`[data-section="${id}"]`).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    function switchTab(btn, panelId) {
+      // scope to parent section
+      const section = btn.closest('.page');
+      section.querySelectorAll('.sub-tab').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(panelId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
